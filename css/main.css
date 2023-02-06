@@ -1,0 +1,103 @@
+.notice-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background: #f1efeb;
+    z-index: 102;
+}
+
+.notice-box.on {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.notice-box .slick-arrow {
+    font-size: 0;
+    background: inherit;
+    border: 0;
+}
+
+.notice-box .notice_slick {
+    text-align: center;
+    max-width: 62.5vw;
+    width: 100%;
+    padding: 40px 0;
+
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.notice-box .slick-dots {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 100px);
+    z-index: 102;
+
+    padding: 20px 30px 15px 30px;
+    border-radius: 20px;
+}
+
+.notice-box .slick-dots>li {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #2e2e2e;
+    margin: 0 8px;
+    border-radius: 50%;
+
+}
+
+.notice-box .slick-dots>li.slick-active {
+    background: #fff;
+}
+
+.notice-box .slick-dots>li button {
+    display: none;
+}
+
+.notice-box .today-box {
+    position: absolute;
+    bottom: 10px;
+    right: 60px;
+}
+
+.notice-box .today-box .chk-box input {
+    width: 16px;
+    height: 16px;
+    /* border: 2px solid #202020;
+    border-radius: 0;
+
+    background-color: #fff; */
+}
+
+.notice-box .today-box .chk-box label {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.notice-box .today-box .close {
+    position: absolute;
+    top: -4px;
+    right: -30px;
+
+    background: inherit;
+    border: 0;
+}
+
+.notice-box .today-box .close i {
+    font-size: 28px;
+}
+
+/* notice-box */
+
+#header {
+    padding-top: 134px;
+}
