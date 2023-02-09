@@ -36,4 +36,9 @@ $(function () {
         $('.img_slide').slick('slickGoTo', idx);
     });
 
+    $('.family-site button').on('click', function () {
+        $('.family-site ul').toggleClass('on');
+        $('.family-site button').toggleClass('on');
+    })
+
 });
