@@ -193,6 +193,48 @@ body {
     line-height: 27px;
     letter-spacing: -1px;
 }
+@media (max-width: 768px) {
+    #header .bt {
+        height: 60px;
+    }
+
+    #header h1 {
+        margin: 15px 0 0 20px;
+    }
+
+    #header h1 a {
+        width: 200px;
+    }
+
+    #header h1 a>img {
+        width: 30px;
+        height: 28px;
+    }
+
+    #header h1 a span {
+        width: 150px;
+        height: 15px;
+    }
+
+    #header .menu-open {
+        top: 14px;
+        right: 20px;
+    }
+
+    #header .menu-open::before {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 2px;
+    }
+
+    #header .language {
+        top: 17px;
+        right: 60px;
+        font-size: 16px;
+        margin-right: 20px;
+    }
+}
 
 /* header */
 
@@ -704,6 +746,102 @@ body {
     letter-spacing: -0.01875vw;
     opacity: .8;
 }
+@media (max-width: 768px) {
+    .mainBg {
+        height: calc(100vh - 80px);
+    }
+
+    .mainBg .bg_01 p,
+    .mainBg .bg_02 p,
+    .mainBg .bg_03 p {
+        font-size: 80px;
+        line-height: 100px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mainBg .bg_01 span,
+    .mainBg .bg_02 span,
+    .mainBg .bg_03 span {
+        font-size: 16px;
+        line-height: 24px;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+    }
+
+    .sub_main {
+        padding: 4.875vw 5vw;
+    }
+
+    .sub_main h2 {
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .sub_main .sub_slide {
+        padding-top: 20px;
+    }
+
+    .sub_main .sub_slide figure {
+        width: 100%;
+        height: 300px;
+        margin-right: 0;
+        display: flex;
+        gap: 30px;
+        background-position: center;
+    }
+    .sub_main .sub_slide .title{
+display: none;
+    }
+    .sub_main .sub_slide .title h3 {
+        font-size: 16px;
+    }
+
+    .sub_main .sub_slide .title p {
+        font-size: 12px;
+    }
+    .tab-project {
+        padding-top: 50px;
+        width: 100%;
+    }
+
+    .tab-project .tab-list {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        margin-top: 20px;
+    }
+
+    .tab-project .tab-list span {
+        font-size: 10vw;
+        margin: 5px;
+    }
+
+    .lifestyle .inner h2 {
+        font-size: 3vw;
+        line-height: 5vw;
+        text-align: center;
+    }
+
+    .lifestyle .inner h2::before,
+    .lifestyle .inner h2::after {
+        font-size: 6vw;
+        line-height: 8vw;
+    }
+
+    .lifestyle .inner h2 span {
+        display: none;
+    }
+
+    .lifestyle .inner p {
+        font-size: 2vw;
+        line-height: 4vw;
+        text-align: center;
+    }
+}
 
 /* main */
 
@@ -934,5 +1072,75 @@ body {
 
     width: 180px;
 }
+@media (max-width: 767.98px) {
+    #footer .inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    #footer .inner .left_box {
+        position: static;
+        text-align: center;
+    }
+
+    #footer .inner .list-sitemap { 
+        margin-top: 60px;
+        gap: 60px;
+        margin-left: 0;
+    }
+
+    #footer .inner .list-sitemap > li {
+        margin: 10px 0;
+    }
+
+    #footer .inner .footer_group {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    #footer .inner .footer_group::before {
+        display: none;
+    }
+
+    #footer .inner .footer_group ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    #footer .inner .family-site {
+        position: static;
+        width: auto;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    #footer .inner .family-site button {
+        display: none;
+    }
+
+    #footer .inner .family-site ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #787878;
+        padding: 10px 0;
+        z-index: 1;
+    }
+
+    #footer .inner .family-site ul.on {
+        display: block;
+    }
+
+    #footer .inner .family-site ul li {
+        width: 100%;
+    }
+}
+
 
 /* footer */
